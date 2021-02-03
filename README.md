@@ -5,6 +5,11 @@ and run
 ```vendor/bin/phpunit```
 This should reproduce:
 
+Set in .env.test
+```
+MAILER_DSN=null://default
+```
+
 ```
 1) App\RegistrationTest::testRegister
    A client must have Mailer enabled to make email assertions. Did you forget to require symfony/mailer?
